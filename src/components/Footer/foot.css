@@ -1,0 +1,82 @@
+/* Footer.css */
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    padding: 20px;
+    align-items: center;
+    z-index: 3;
+  }
+  .footer-p{
+    width: 363px;
+    color: #606060;
+    font-family: sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px; /* 130% */
+    margin-top: -20px;
+  }
+  .left-side {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .right-side {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding:-10px 10px 20px 10px;
+  }
+  
+  .logos img {
+    max-width: 50px; /* Adjust as needed */
+  }
+  .logo1,.logo2,.logo3{
+    margin:-10px 10px 20px 10px;
+  }
+  .left-side {
+    display: flex;
+    align-items: center; /* Vertically align items */
+  }
+  
+  .logo-button {
+    display: flex;
+    align-items: center; /* Vertically align content inside the button */
+    gap: 10px; /* Add spacing between the logo and text */
+    border-radius: 7px;
+    border: 1px solid #ffefef;
+    color: white;
+    background:black;
+    border-radius: 7px;
+    border: 1px solid #FFF;
+  }
+  
+  .logo-button img {
+    max-width: 50px; /* Adjust as needed */
+  }
+  .logo-button{
+    
+text-align: center;
+
+/* Hero text */
+font-family: sans-serif;
+font-size: 12px;
+font-style: normal;
+font-weight: 800;
+line-height: 18px; /* 150% */
+letter-spacing: 0.5px;
+text-transform: uppercase;
+display: flex;
+width: 170px;
+height: 50px;
+padding: 25px;
+justify-content: space-between;
+align-items: center;
+
+  }
+
+.investing-foot{
+    margin-top:18%;
+}

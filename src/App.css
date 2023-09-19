@@ -1,38 +1,226 @@
-.App {
+/* App.css or your custom CSS file */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  background-color: black;
+  position: relative;
+  min-height: 75vh;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+  overflow: hidden;
+}
+
+.spark-image {
+  position: absolute;
+  top: -2%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.centered-content {
+  margin-top: -15%;
+  position: center; /* This should be 'relative' instead of 'center' */
+  z-index: 2;
   text-align: center;
+  color: #fff;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cash,.app {
+  color: #FFF;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: 166px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.phone-image {
+  margin-top: -120%;
+  margin-bottom: 100px;
+}
+
+.cash {
+  width: 711px;
+  height: 302.875px;
+  margin-top: 10%;
+
+}
+
+.app {
+  z-index: 3;
+}
+
+h1.app {
+  margin-top: -30%;
+  top: -28px;
+  color: #FFF;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 193px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 193px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 3;
+}
+.cash{
+  color: #FFF;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 193px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 193px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.cube {
+  margin-top: 1%;
+  margin-right: 60%;
+}
+
+.stair {
+  margin-top: -5%;
+  margin-left: 60%;
+}
+
+.cubes {
+  position: absolute;
+  top: 67%; /* Adjust as needed */
+  right: 73%; /* Adjust as needed */
+  max-width: 50%; /* Set a maximum width for the cube */
+  z-index: 2; /* Ensure it's above other elements */
+  width: 188px;
+  height: 176.478px;
+}
+
+.pillar {
+  position: absolute;
+  bottom: 0; /* Adjust as needed */
+  left: 65%; /* Adjust as needed */
+  max-width: 50%; /* Set a maximum width for the pillar */
+  z-index: 2; /* Ensure it's above other elements */
+ 
+}
+
+/* Responsive styles for phones */
+@media screen and (max-width: 767px) {
+  .centered-content {
+    margin-top: -10%; /* Adjust vertical alignment on smaller screens */
+  }
+
+  h1 {
+    font-size: 72px; /* Decrease font size for smaller screens */
+  }
+
+  .phone-image {
+    margin-top: 0; /* Remove negative margin on smaller screens */
+    margin-bottom: 20px; /* Adjust spacing between text and phone image */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Responsive styles for tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  h1 {
+    font-size: 96px; /* Increase font size for tablets */
+  }
+
+  .phone-image {
+    max-width: 80%; /* Reduce phone image size for tablets */
+  }
+
+  .cash {
+    margin-top: 10%; /* Adjust spacing between "Cash" and "App" on tablets */
+  }
+}
+
+/* Responsive styles for desktops/laptops */
+@media screen and (min-width: 1024px) {
+  .centered-content {
+    align-content: center; /* Adjust vertical alignment on larger screens */
+  }
+
+  h1 {
+    font-size: 120px; /* Increase font size for desktops/laptops */
+  }
+
+  .phone-image {
+    max-width: 106%; /* Reduce phone image size for desktops/laptops */
+  }
+
+  .cash {
+    margin-top: 60px; /* Adjust spacing between "Cash" and "App" on desktops/laptops */
+  }
+}
+
+/* Navbar.css */
+.navbar-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-top: -5%;
+  padding: -10px 20px;
+}
+.left-logo {
+  margin-right: auto; /* Push icons to the left */
+}
+
+.right-logo{
+  margin-left: auto; /* Push icons to the right */
+}
+.left-logo,
+.right-logo {
+  width: 40px;
+  height: 40px;
+  margin: 20px 100px 20px 100px;
+  
+}
+
+.left-logo img,
+.right-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar ul {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar a {
+
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar a:hover {
+  text-decoration: underline;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.li,a{
+color: #FFF;
+font-family: sans-serif;
+font-size: 12px;
+font-style: normal;
+font-weight: 800;
+line-height: 18px; /* 150% */
+letter-spacing: 0.5px;
+text-transform: uppercase;
+padding:14px;
 }

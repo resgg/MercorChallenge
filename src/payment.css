@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.payment-body{
+    width: 1366px;
+    height: 750px;
+    
+}
+.payment-container {
+    margin-top:4%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative;
+  }
+  
+  .line {
+    width: 1366px;
+    height: 294.55px;
+   flex-shrink: 0;
+    width:100%;
+    margin-top:40%;
+    height: 294.55px;
+    position: absolute; /* Position the line absolutely within the container */
+    z-index: -1;
+  }
+  
+  .payment-title {
+    color: var(--Cash-App-Green, #00D54B);
+    font-family: sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px; /* 100% */
+    text-align: left; /* Left-align the h1 tag */
+  }
+  
+  .payment-para {
+    width: 352px;
+    color: #000;
+    font-family: sans-serif ;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 137.5% */
+    letter-spacing: 0.3px;
+  }
+  
+  .payment-text {
+    flex: 1; /* Allow the text to take up available space */
+    margin-left: 20%; /* Add some space between the text and the image */
+    
+  }
+  
+  .payment-img {
+    margin-left: -35%;
+    flex: 2; /* Allow the image to take up available space */
+    text-align: center; /* Center-align the image horizontally */
+    z-index: 1;
+  }
+  
+  .payment-block {
+    display: flex;
+    justify-content: space-between; /* Add space between the elements */
+    align-items: center; /* Center vertically within the payment-block */
+  }
+  
+  /* pillars */
+
+.pillar-random{
+    margin-top:-5% ;
+    padding:10px;
+}
+.pillar-image-1{
+    margin-top:-5.45%;
+}
+.pillar-image-2{
+  z-index: 2;
+}
+.pillar-image-3{
+  margin-left: -5%;
+  z-index: 1;
+}
+.pillar-image-4{
+margin-left : 15%;
+}
+.pillar-image-5{
+  margin-top: 10%;
+}
+.pillar-image-9 {
+  margin-left:-45%; /* Adjust the margin to control the spacing between the pillars */
+  margin-top: -15%; /* Adjust the margin-top to position them higher */
+  z-index: 1;
+}
+.pillar-image-8{
+  margin-left:-9%; 
+  margin-top: -10%;
+
+}
+.pillar-image-4,
+.pillar-image-5{
+  z-index: 2;
+}
+.pillar-image-7{
+  margin-top: -7%;
+  margin-left:-40%;
+  z-index: 2;
+}
+.pillar-image-6{
+  margin-top: -10%;
+  margin-left:-15% ;
+}
+/* Additional style to align all pillars horizontally */
+.pillar-random {
+  display: flex;
+  align-items: flex-start; /* Align pillars at the top */
+}
+/* Reset default margin and padding for the body and HTML elements */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+} 
+
+/* Responsive styles for laptops (1366px and larger) */
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .payment-body{
+   margin-left: -17%;
+   
+  }
+}
